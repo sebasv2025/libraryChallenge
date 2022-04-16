@@ -4,9 +4,5 @@ import lombok.Data;
 
 @Data
 public class Loan {
-    String IdLoan;
-
-
+    String idLoan;
 }
-
-
