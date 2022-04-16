@@ -1,14 +1,20 @@
 package com.challenge.library.model;
 
-import lombok.Data;
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
-@Setter
+
 public class User {
 
     String name;
-    int Id;
+    String identificacionUsuario;
+    int activeLoans;
+    int tipoUsuario;
 
+    public User(String name, String identificacionUsuario, int tipoUsuario){
+        this.name = name;
+        this.identificacionUsuario = identificacionUsuario;
+        this.tipoUsuario = tipoUsuario;
+        activeLoans = 0;
+    }
 }
