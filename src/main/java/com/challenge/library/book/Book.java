@@ -1,4 +1,4 @@
-package com.challenge.library.model.book;
+package com.challenge.library.book;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

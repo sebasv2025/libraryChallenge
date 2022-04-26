@@ -1,4 +1,4 @@
-package com.challenge.library.model.user;
+package com.challenge.library.user;
 
 public record UserRequest (String identificacionUsuario,
                            String userName,

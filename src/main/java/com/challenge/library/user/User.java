@@ -1,5 +1,6 @@
-package com.challenge.library.model.user;
+package com.challenge.library.user;
 
+import com.challenge.library.exception.ApiRequestException;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -40,11 +41,14 @@ public class User {
             this.tipoUsuario = tipoUsuario;
             activeLoans = 0;
         }else{
-           throw new UserException("User is not allowed because the ID has more than 10 characters");
+           throw new ApiRequestException("User is not allowed because the ID has more than 10 characters");
        }
     }
 
     private boolean isUserAllowed(String identificacionUsuario){
         return identificacionUsuario.length() <= 10;
+    }
+    public void setActiveLoans(int activeLoans) {
+        this.activeLoans = activeLoans;
     }
 }

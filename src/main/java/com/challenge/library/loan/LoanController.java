@@ -1,4 +1,4 @@
-package com.challenge.library.model.loan;
+package com.challenge.library.loan;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -18,8 +18,7 @@ public record LoanController(LoanService loanService) {
     @PostMapping
     public ResponseEntity<Response> registerLoan(@RequestBody LoanRequest loanRequest){
         log.info("New loan registration {}", loanRequest);
-        Response response = loanService.registerLoan(loanRequest);
-        return new ResponseEntity<>(response, response.getStatus());
+        return new ResponseEntity<>(loanService.registerLoan(loanRequest), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")

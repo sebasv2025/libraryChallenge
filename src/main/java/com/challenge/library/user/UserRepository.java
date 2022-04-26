@@ -1,4 +1,4 @@
-package com.challenge.library.model.user;
+package com.challenge.library.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

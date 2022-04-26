@@ -1,4 +1,4 @@
-package com.challenge.library.model.loan;
+package com.challenge.library.loan;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;

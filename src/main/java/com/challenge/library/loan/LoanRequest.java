@@ -1,4 +1,4 @@
-package com.challenge.library.model.loan;
+package com.challenge.library.loan;
 
 import java.time.LocalDate;
 
